@@ -1,0 +1,32 @@
+<h1>Wow Realms</h1>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">type</th>
+    <th scope="col">timezone</th>
+    <th scope="col">status</th>
+    <th scope="col">slug</th>
+    <th scope="col">queue</th>
+    <th scope="col">population</th>
+    <th scope="col">name</th>
+    <th scope="col">locale</th>
+    <th scope="col">battlegroup</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let realm of realms; let i = index">
+    <th scope="row">{{i+1}}</th>
+    <td>{{realm.type}}</td>
+    <td>{{realm.timezone}}</td>
+    <td>{{realm.status}}</td>
+    <td>{{realm.slug}}</td>
+    <td>{{realm.queue}}</td>
+    <td>{{realm.population}}</td>
+    <td>{{realm.name}}</td>
+    <td>{{realm.locale}}</td>
+    <td>{{realm.battlegroup}}</td>
+    <td><button class = "btn-sm btn-success">Details</button></td>
+  </tr>
+  </tbody>
+</table>

@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
+import { RealmComponent } from './realm/realm.component';
+import {HttpClientModule} from '@angular/common/http';
+import {RealmServiceService} from './service/realm-service.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RealmComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [RealmServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
